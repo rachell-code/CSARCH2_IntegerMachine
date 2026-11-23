@@ -100,8 +100,8 @@ export function convertToTwosComplement(binaryNum) {
  * @returns true if it is within range false if not
  */
 export function isWithinSignedRange(num, size) {
-     const min = -(2 ** (size-1))
-     const max = 2 ** (size - 1);
+      const min = -(2 ** (size - 1));
+      const max = (2 ** (size - 1)) - 1;
 
      if(num >= min && num <= max) {
           return true;
