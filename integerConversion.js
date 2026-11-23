@@ -23,6 +23,7 @@ export function convertToSigned(num, size) {
    return new Error('Input is outside signed range!');
 }
 
+/*
 function signedTest(num, size) {
     try {
         console.log(`${num}, ${size}:`, convertToSigned(num, size));
@@ -50,9 +51,6 @@ unsignedTest(-1, 4);
 unsignedTest(255, 8);
 unsignedTest(256, 8);
 
-
-
-
 console.log("SIGNED")
 signedTest(0, 4);
 signedTest(1, 4);
@@ -64,5 +62,5 @@ signedTest(-1, 4);
 signedTest(-2, 4);
 signedTest(-5, 4);
 signedTest(-16, 5);
-
+*/
 
