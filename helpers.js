@@ -11,8 +11,6 @@ export function convertToBinary(num) {
    let quotient = Math.abs(num);
    let remainder = 0;
 
-   
-
    while(quotient >= 2){
         remainder = quotient % 2;
         binaryStack.push(remainder);
