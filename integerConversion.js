@@ -1,5 +1,13 @@
 import * as helpers from './helpers.js';
 
+/**
+ * Converts a decimal number to an unsigned
+ * binary.
+ * 
+ * @param {*} num decimal number to be converted
+ * @param {*} size intended number of bits
+ * @returns array representing the unsigned binary output
+ */
 export function convertToUnsigned(num, size) {
 
      if(helpers.isWithinUnsignedRange(num, size)) {
@@ -11,6 +19,14 @@ export function convertToUnsigned(num, size) {
      return new Error('Input is outside unsigned range!');
 }
 
+/**
+ * Converts a decimal number to signed
+ * binary.
+ * 
+ * @param {*} num decimal number to be converted
+ * @param {*} size intended number of bits
+ * @returns array representing the signed binary output
+ */
 export function convertToSigned(num, size) {
 
    if(helpers.isWithinSignedRange(num, size)) {
